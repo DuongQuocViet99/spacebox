@@ -11,7 +11,8 @@ export const theme = extendTheme({
         4: '#E6E6E6'
       },
       cyan: {
-        1: '#3DD1F2'
+        1: '#3DD1F2',
+        2: '#5CF2E3'
       },
       brown: {
         1: '#BFB9B8',
