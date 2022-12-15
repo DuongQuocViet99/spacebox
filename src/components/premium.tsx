@@ -8,7 +8,7 @@ export default function Premium() {
       rounded='md'
       boxShadow='base'
     >
-      <TB.IconDiamonds color='#FAC8CE' />
+      <TB.IconKeyframe color='#FAC8CE' />
       <C.Switch size='sm' />
     </C.HStack>
   )
