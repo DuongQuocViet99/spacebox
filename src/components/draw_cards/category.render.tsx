@@ -14,6 +14,6 @@ const listCategory: ICategory[] = [
   { name: 'Thường', class: 'normal', percent: 72 },
 ]
 
-export default function DrawCardsRender({ render }: { render: ( i: ICategory, k: number ) => JSX.Element }) {
+export default function CategoryRender({ render }: { render: ( i: ICategory, k: number ) => JSX.Element }) {
   return <>{ listCategory.map(( i, k ) => render( i, k )) }</>
 }
