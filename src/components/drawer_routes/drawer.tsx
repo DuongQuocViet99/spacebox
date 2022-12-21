@@ -43,7 +43,7 @@ export default function DrawerRoutes() {
                   to={ i.url }
                   icon={ i.icon }
                 />
-                { k !== 5 ? <C.Divider w='12px' borderColor='adobe.brown.1' rounded='full' /> : <></> }
+                { k !== 6 ? <C.Divider w='12px' borderColor='adobe.brown.1' rounded='full' /> : <></> }
               </C.VStack>
             }/>
           </C.VStack>
