@@ -1,1 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.infinity {
+  animation-name: colorInfinity;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes colorInfinity {
+  0%    {background-color: #E372F2;}
+  20%   {background-color: #3DD1F2;}
+  40%   {background-color: #F28705;}
+  60%   {background-color: #04D99D;}
+  80%   {background-color: #F26BAA;}
+  100%  {background-color: #F2B705;}
+}
+
+.supreme { background-color: #F26BAA; }
+.legendary{ background-color: #9d4edd; }
+.god { background-color: #F2B705; }
+.epic { background-color: #3DD1F2; }
+.rare { background-color: #44EDAF; }
+.normal { background-color: #C0CADC; }
+
+
+.borderInfinity {
+  animation-name: borderInfinity;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes borderInfinity {
+  0%    {border-color: #E372F2;}
+  20%   {border-color: #3DD1F2;}
+  40%   {border-color: #F28705;}
+  60%   {border-color: #04D99D;}
+  80%   {border-color: #F26BAA;}
+  100%  {border-color: #F2B705;}
+}
