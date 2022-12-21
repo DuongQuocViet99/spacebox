@@ -8,7 +8,8 @@ export const theme = extendTheme({
         1: '#88898C',
         2: '#6E6F73',
         3: '#D9D9D9',
-        4: '#E6E6E6'
+        4: '#E6E6E6',
+        5: '#A0A4A9'
       },
       cyan: {
         1: '#3DD1F2',
