@@ -1,15 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { ChakraProvider } from '@chakra-ui/react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import 'index.css'
+import App from 'App'
+import reportWebVitals from 'reportWebVitals'
+import { HomePage, ErrorPage, theme } from 'components/common'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <HomePage />
+      }
+    ]
+  }
+])
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider theme={ theme }>
+      <RouterProvider router={ router } />
+    </ChakraProvider>
   </React.StrictMode>
 );
 
