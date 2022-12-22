@@ -8,6 +8,7 @@ export { default as Layout } from 'components/layout'
 export { default as Header } from 'components/header'
 export { IconButtonRoute } from 'components/iconbutton'
 export { default as Premium } from 'components/premium'
+export { default as BtnOutline } from 'components/btn/outline'
 // - Drawer routes
 export { default as DrawerRoutes } from 'components/drawer_routes/drawer'
 export { default as DrawerRoutesRender } from 'components/drawer_routes/routes.render'
