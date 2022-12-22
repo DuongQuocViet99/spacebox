@@ -1,8 +1,8 @@
+import { useState } from 'react'
 import * as TB from'@tabler/icons'
 import * as C from '@chakra-ui/react'
-import * as Cus from 'components/common'
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import * as Cus from 'components/common'
 
 export default function DrawerAuth() {
   const { isOpen, onOpen, onClose } = C.useDisclosure()
@@ -38,83 +38,21 @@ export default function DrawerAuth() {
                 <C.Stack>
                   <Cus.Card url='/profile/Kathy' icon={ <TB.IconUser size='16px' /> } mainText='Kathy' extraText='|Royal|' />
                   {/* <Cus.Card url='/clans/Royal' icon={ <TB.IconBookmark size='16px' /> } mainText='Royal' /> */}
-                  <C.Button
-                    as={ Link }
-                    to='/signin'
-                    fontFamily='Quicksand'
-                    color='adobe.gray.2'
-                    border='1px'
-                    borderColor='adobe.gray.4'
-                    bg='none'
-                    _hover={{ borderColor: 'adobe.gray.3' }}
-                    _active={{}}
-                    rounded='sm'
-                    fontSize='sm'
-                    fontWeight='400'
-                  >Xem tất cả clan</C.Button>
-                  <C.Button
-                    as={ Link }
-                    to='/signin'
-                    fontFamily='Quicksand'
-                    color='adobe.gray.2'
-                    border='1px'
-                    borderColor='adobe.gray.4'
-                    bg='none'
-                    _hover={{ borderColor: 'adobe.gray.3' }}
-                    _active={{}}
-                    rounded='sm'
-                    fontSize='sm'
-                    fontWeight='400'
-                  >Tạo clan</C.Button>
+                  <Cus.BtnOutline as={ Link } to='/clans'>Xem tất cả clan</Cus.BtnOutline>
+                  <Cus.BtnOutline as={ Link } to='/createclan'>Tạo clan</Cus.BtnOutline>
                 </C.Stack>
               :
                 <C.Stack>
-                  <C.Button
-                    as={ Link }
-                    to='/signin'
-                    fontFamily='Quicksand'
-                    color='adobe.gray.2'
-                    border='1px'
-                    borderColor='adobe.gray.4'
-                    bg='none'
-                    _hover={{ borderColor: 'adobe.gray.3' }}
-                    _active={{}}
-                    rounded='sm'
-                    fontSize='sm'
-                    fontWeight='400'
-                  >Đăng nhập</C.Button>
-                  <C.Button
-                    as={ Link }
-                    to='/signup'
-                    fontFamily='Quicksand'
-                    color='adobe.gray.2'
-                    border='1px'
-                    borderColor='adobe.gray.4'
-                    bg='none'
-                    _hover={{ borderColor: 'adobe.gray.3' }}
-                    _active={{}}
-                    rounded='sm'
-                    fontSize='sm'
-                    fontWeight='400'
-                  >Đăng kí</C.Button>
+                  <Cus.BtnOutline as={ Link } to='/signin'>Đăng nhập</Cus.BtnOutline>
+                  <Cus.BtnOutline as={ Link } to='/signup'>Đăng kí</Cus.BtnOutline>
                 </C.Stack>
             }
           </C.DrawerHeader>
           { auth && 
             <C.DrawerFooter>
-              <C.Button
-                bg='none'
-                size='sm'
-                border='1px'
-                rounded='sm'
-                fontWeight='400'
-                color='adobe.gray.2'
-                fontFamily='Quicksand'
-                borderColor='adobe.gray.4'
-                _hover={{ borderColor: 'adobe.gray.3' }} _active={{}}
-              >
+              <Cus.BtnOutline size='sm'>
                 Đăng xuất
-              </C.Button>
+              </Cus.BtnOutline>
             </C.DrawerFooter>
           }
         </C.DrawerContent>
