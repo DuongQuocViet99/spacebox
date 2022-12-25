@@ -14,6 +14,10 @@ const baseStyle = definePartsStyle({
         borderColor: 'adobe.pink.1',
       }
     },
+    _indeterminate: {
+      bg: 'adobe.pink.1',
+      borderColor: 'adobe.pink.1'
+    }
   },
   label: {
     color: 'adobe.gray.1',
