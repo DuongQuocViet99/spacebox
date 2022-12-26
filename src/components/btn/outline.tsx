@@ -5,10 +5,12 @@ interface IProps {
   as?: any,
   to?: string,
   size?: string
+  onClick?: () => any
 }
 
-export default function BtnOutline({ children, as, to, size }: IProps ) {
+export default function BtnOutline({ children, as, to, size, onClick }: IProps ) {
   return <C.Button
+    onClick={ onClick }
     as={ as }
     to={ to }
     size={ size }
