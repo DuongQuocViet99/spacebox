@@ -1,6 +1,9 @@
+import { inputTheme } from 'components/input'
 import { extendTheme } from '@chakra-ui/react'
+import { buttonTheme } from 'components/button'
 import { switchTheme } from 'components/switch'
 import { checkboxTheme } from 'components/checkbox'
+import { accordionTheme } from 'components/accordion'
 
 export const theme = extendTheme({
   colors: {
@@ -26,7 +29,10 @@ export const theme = extendTheme({
     }
   },
   components: {
+    Input: inputTheme,
+    Button: buttonTheme,
     Switch: switchTheme,
     Checkbox: checkboxTheme,
+    Accordion: accordionTheme
   }
 })
