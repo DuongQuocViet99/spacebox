@@ -15,7 +15,8 @@ const unstyled = definePartsStyle({
     fontFamily: 'Quicksand',
     borderColor: 'adobe.gray.4',
     _hover: { borderColor: 'adobe.gray.3' },
-    _focus: { borderColor: 'adobe.gray.3' }
+    _focus: { borderColor: 'adobe.gray.3' },
+    _placeholder: { color: 'adobe.gray.5' }
   }
 })
 
