@@ -1,6 +1,6 @@
 import * as C from '@chakra-ui/react'
 
-export default function SignIn() {
+export const SignIn = () => {
   const { isOpen, onOpen, onClose } = C.useDisclosure()
 
   return (
