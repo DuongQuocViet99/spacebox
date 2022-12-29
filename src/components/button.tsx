@@ -13,6 +13,16 @@ const outline = defineStyle({
   _hover: { bg: 'none', borderColor: 'adobe.gray.3' }
 })
 
+const shadow = defineStyle({
+  bg: 'none',
+  rounded: 'sm',
+  boxShadow: 'md',
+  fontWeight: '400',
+  color: 'adobe.gray.2',
+  fontFamily: 'Quicksand',
+  _hover: { boxShadow: 'base' },
+})
+
 export const buttonTheme = defineStyleConfig({
-  variants: { outline },
+  variants: { outline, shadow }
 })
