@@ -3,15 +3,16 @@ import * as C from '@chakra-ui/react'
 
 export default function Money() {
   return (
-    <C.Button
-      bg='none'
-      boxShadow='base'
-      color='adobe.pink.1'
-      fontFamily='Quicksand'
-      _hover={{}} _active={{}} 
-      leftIcon={ <TB.IconCoin size='18px' color='#C0CADC' /> }
-    >
-      42.134
-    </C.Button>
+    <C.HStack px={ 4 }>
+      <TB.IconCoin size='18px' color='#C0CADC' />
+      <C.Text
+        fontSize='sm'
+        color='adobe.gray.2'
+        letterSpacing='wider'
+        fontFamily='Quicksand'
+      >
+        42.134
+      </C.Text>
+    </C.HStack>
   )
 }
