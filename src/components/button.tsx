@@ -1,8 +1,6 @@
 import { defineStyle, defineStyleConfig } from '@chakra-ui/react'
 
 const outline = defineStyle({
-  bg: 'none',
-  border: '1px',
   rounded: 'sm',
   fontSize: 'sm',
   fontWeight: '400',
@@ -14,15 +12,23 @@ const outline = defineStyle({
 })
 
 const shadow = defineStyle({
-  bg: 'none',
   rounded: 'sm',
-  boxShadow: 'md',
+  fontSize: 'sm',
+  boxShadow: 'lg',
   fontWeight: '400',
+  letterSpacing: 'wide',
   color: 'adobe.gray.2',
   fontFamily: 'Quicksand',
   _hover: { boxShadow: 'base' },
 })
 
+const solid = defineStyle({
+  bg: 'none',
+  fontFamily: 'Quicksand',
+  _hover: { bg: 'none' },
+  _active: { bg: 'none' }
+})
+
 export const buttonTheme = defineStyleConfig({
-  variants: { outline, shadow }
+  variants: { outline, shadow, solid }
 })
